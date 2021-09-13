@@ -10,17 +10,17 @@ namespace Prime
             for (int x = 1; x <= 1000; x++)
             {
                 z = 0;
-                for (int y = 2; y <= x/2; y++)
+                for (int y = 1; y <= x; y++)
                 { 
                     if (x % y == 0)
                     {
                         z++;
                          
-                        break;
+                        
                     }
                 }
 
-                if (z == 0 && x != 1)
+                if (z == 2)
                 {
                     Console.WriteLine(x);
                 }
